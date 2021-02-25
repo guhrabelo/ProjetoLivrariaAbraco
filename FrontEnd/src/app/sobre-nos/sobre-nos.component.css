@@ -1,0 +1,167 @@
+  
+.cardgs * {
+  margin: auto;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+p{
+  font-size: 18px;
+}
+
+.navbar{
+  background-color: #005186;
+}
+
+.navbar-brand{
+  color:white
+}
+
+.nav-link:hover{
+  color: #65ACD8;
+}
+
+.nav-link{
+  color:white;
+}
+.navbar-brand{
+  font-size: 15pt;
+  font-family: Freestyle Script;
+}
+
+.jumbotron{
+  display: flex;
+
+
+}
+.container
+{
+  color:#3d3d3d ;
+}
+#corDosCards
+{
+  background-color: #65ACD8;
+
+}
+.display {
+  display: none;
+}
+.img-titulo 
+{
+  align-self: center;
+}
+
+
+.texto-m{
+  margin-top: 0px;
+}
+
+.texto-resp {
+  width: 2vw;
+}
+
+div.img-titulo {
+  align-self: center;
+}
+
+.img-rs > img {
+  height: auto;
+  width: 100%;
+  max-height: 500px;
+}
+
+.container-fluid{
+  padding: 0px;
+}
+
+@media (min-width: 576px) {
+  
+  p.texto-resp {
+    width: 14px;
+    margin: 0;
+  }
+  .ajustaImg {
+    padding: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+ 
+  .texto-resp {
+    width: 2vw;
+  }
+  .ajuste {
+    padding: 0;
+  }
+  .display {
+    display: flex;
+  }
+}
+
+img.rounded-circle {
+  max-width: 180px;
+  max-height: 180px;
+  min-width: 160px;
+  min-height: auto;
+}
+
+.trocaCordoNome {
+  font-size: 5vw;
+  
+}
+
+
+.trocaCordoNome:hover {
+    
+  color: #fef25b;
+}
+
+ 
+h1{
+  font-size: 6vw;
+  counter-reset: #555;
+  font-weight: bold;
+}
+.display {
+  display: flex;
+}
+
+.getset {
+  margin: 10px 10px 20px 10px;
+}
+
+
+
+h3{
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.card-body {
+  align-items: center;
+  height: 450px;
+}
+
+.card-body > p {
+  word-wrap: break-word;
+}
+
+#cresceCard>:hover
+{
+  color: #fef25b;
+}
+.imgem:hover
+{
+  color: #65ACD8;
+}
+
+
+
+
+
+
+ 
+
+

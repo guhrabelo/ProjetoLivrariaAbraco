@@ -1,0 +1,11 @@
+package com.recreio.LivrariaAbraco.Repository;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.recreio.LivrariaAbraco.model.Usuario;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
+	public Optional<Usuario> findByEmail(String email);
+}

@@ -1,0 +1,115 @@
+.navbar{
+    background-color: #005186;
+    font-family: SansSerif;
+    font-size: 13pt;
+}
+
+.navbar-brand{
+    color:white
+}
+
+.nav-link:hover{
+    color: #65ACD8;
+}
+
+.nav-link{
+    color:white;
+}
+.navbar-brand{
+    font-size: 15pt;
+    font-family: Freestyle Script;
+}
+
+.color{
+    color: black
+}
+
+.jumbotron{
+    background-image: url(https://i.imgur.com/QcRDPA3.png);
+    background-repeat: round;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.imagemMenininha{
+    background-image: url(https://i.imgur.com/1dpImAQ.png);
+    background-position: 95%;
+    background-repeat: no-repeat;
+    background-size: 18%;
+}
+
+.imagemMenininha:hover{
+    background-image: url(https://i.imgur.com/noDm370.png);
+    background-position: 95%;
+    background-repeat: no-repeat;
+    background-size: 18%;
+}
+
+.jumbotron-imagem:hover{
+    
+    background-image: url(https://i.imgur.com/noDm370.png);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: 340px;
+}
+
+.btnVermais{
+    background-color: white;
+    color: black;
+    border: 2px solid #fdfdfd;
+    font-size: 25px;
+    border-radius: 40px;
+}
+
+.btnVermais:hover{
+    background-color: #005186;
+    color: white;
+}
+
+.hrPontilhado{
+    border:  2px dashed #C1DFF2;
+    width: 1000px;
+}
+
+.hrMenor{
+    background-color: black;
+    height: 1px;
+    width: 45%;
+    opacity: 30%;
+}
+
+.h2OqueFazemos{
+    color: #65ACD8;
+    font-family: Century Gothic;
+}
+
+.oQueFazemos{
+    color: #005186;
+    font-family: Century Gothic;
+}
+
+.texto-esquerda{
+    text-align: left;
+}
+
+.margem{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.texto-direita{
+    text-align: justify;
+}
+
+.imagemParceiros{
+    background-image: url(https://i.imgur.com/cFyuOd5.jpg);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.social{
+    width: 50px;
+    height: 50px;
+}
