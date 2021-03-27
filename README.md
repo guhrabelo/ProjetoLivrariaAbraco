@@ -1,10 +1,8 @@
 # ProjetoLivrariaAbraco
 
-Este repositório contém a descrição documentada do e-commerce da Livraria Abraço. Realizado back e front ao longo de dois meses. Na branch -main está integrado todas as implementações desenvolvidas ao longo de dois meses. Desenvolvido durante o curso da Generation Brasil utilizando as tecnologias Java, Spring Boot, REST API, MySQL, Angular e TypeScript.
+Este repositório contém a descrição documentada do e-commerce da Livraria Abraço. Na branch -main está integrado todas as implementações desenvolvidas ao longo de dois meses. Desenvolvido durante o curso da Generation Brasil.
 
 Durante o projeto criou-se back-end, front-end e o banco de dados, sendo gerado com Angular CLI na versão 11.2.0. Cada pasta tem uma configuração específica para a montagem de cada uma das páginas. Para mais detalhes de acesso do Angular, segue-se:
-
-O projeto foi gerado com Angular CLI na versão 11.2.0.
 
 
 ## **:computer: TECNOLOGIAS**
