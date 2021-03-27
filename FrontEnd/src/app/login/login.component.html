@@ -1,1 +1,36 @@
-<p>login works!</p>
+<!--Tela de Login-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 d-fle justify-content-center">
+      <main>
+        <article class="main-container">
+          <div class="login-wrapper">
+    
+            <section class="image-wrapper"> 
+            </section>
+            <section class="form-wrapper">
+              <div class="form-container align-items-center">
+               
+                <div class="form-messages">
+      
+                  <h1 id="alinhador">Login</h1>
+                </div>
+          
+                 <form  action="fakeurl.php" class="form ">
+                  <input [(ngModel)]='userLogin.email' type="email" name="user-email" id="user-email" placeholder="E-mail">
+                  <input [(ngModel)]='userLogin.senha' type="password" name="user-password" id="user-password" placeholder="Senha">
+                  <button type="submit" class="login-button" (click)='entrar()'>Entrar</button>
+                </form>
+                <p> Não tem uma conta? <a routerLink='/cadastro'>Cadastre-se</a></p>
+              </div>
+            </section>
+      
+            
+          </div>
+        </article>
+      </main>
+    
+    </div>
+  </div>
+</div>
+<!--/Tela de Login-->

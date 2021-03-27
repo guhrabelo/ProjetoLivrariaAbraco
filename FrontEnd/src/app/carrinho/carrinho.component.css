@@ -1,0 +1,32 @@
+.box
+{
+    margin: 2% 0;
+    background-color: rgb(255, 255, 255) ;
+    -webkit-box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.2);
+    
+}
+.nomeNomeio
+{
+    text-align: center;
+    margin-top: 13%;
+}
+.img
+{
+    width: 40px;
+    height: 50px;
+}
+.alinhaTd
+{
+    text-align: justify;
+}
+#afasta
+{
+    font-size: 25px;
+    color: rgba(141, 209, 3, 0.734);
+   
+
+}
+#aumentaFont
+{
+    font-size: 25px;
+}

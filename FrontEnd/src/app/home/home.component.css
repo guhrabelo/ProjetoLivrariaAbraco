@@ -1,96 +1,120 @@
-.navbar{
-    background-color: #005186;
-    font-family: SansSerif;
-    font-size: 13pt;
-}
-
-.navbar-brand{
-    color:white
-}
-
-.nav-link:hover{
-    color: #65ACD8;
-}
-
-.nav-link{
-    color:white;
-}
-.navbar-brand{
-    font-size: 15pt;
-    font-family: Freestyle Script;
-}
-
-.color{
-    color: black
+footer {
+    display: none;
 }
 
 .jumbotron{
-    background-image: url(https://i.imgur.com/QcRDPA3.png);
+    background-image: url(https://i.imgur.com/hxa9TMz.png);
     background-repeat: round;
+    border-radius: 0;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-bottom: 25px;
+           
 }
 
-.imagemMenininha{
-    background-image: url(https://i.imgur.com/1dpImAQ.png);
-    background-position: 95%;
-    background-repeat: no-repeat;
-    background-size: 18%;
+ .jumbotron:hover {
+    background-image: url(https://i.imgur.com/5wwZPhe.png);       
 }
 
-.imagemMenininha:hover{
-    background-image: url(https://i.imgur.com/noDm370.png);
-    background-position: 95%;
-    background-repeat: no-repeat;
-    background-size: 18%;
+.hrDegrade{
+    height: 2px;
+    width: 70%;
+    background: -webkit-gradient(linear, 5 5, 100% 0%, from(white), to(white), color-stop(50%, #F2B035));
 }
 
-.jumbotron-imagem:hover{
-    
-    background-image: url(https://i.imgur.com/noDm370.png);
-    background-position: 90%;
-    background-repeat: no-repeat;
-    background-size: 340px;
+.carousel-produtos { 
+    margin: 0;
+    padding: 0;
+    width: 70%; 
 }
 
-.btnVermais{
-    background-color: white;
-    color: black;
-    border: 2px solid #fdfdfd;
-    font-size: 25px;
-    border-radius: 40px;
+.control-produtos-prev {
+position: relative;
+left: 35%;    
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23005186' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
-.btnVermais:hover{
-    background-color: #005186;
-    color: white;
+.control-produtos-next {
+position: relative;
+right: 40%;
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23005186' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");  
+
 }
 
-.hrPontilhado{
-    border:  2px dashed #C1DFF2;
-    width: 1000px;
+.card{
+    width: 250px;
+    height: 450px;
 }
 
-.hrMenor{
-    background-color: black;
-    height: 1px;
-    width: 45%;
-    opacity: 30%;
+.card-img-top {
+    width: 250px;
+    height: 350px;
 }
+
+.svg-wrapper {
+height: 60px;
+margin: 0 auto;
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+width: 320px;
+}
+
+.shape {
+fill: transparent;
+stroke-dasharray: 140 540;
+stroke-dashoffset: -474;
+stroke-width: 8px;
+stroke: #005186;
+}
+
+.text {
+color: #3D3D3D;
+font-size: 22px;
+font-weight: bold;
+letter-spacing: 8px;
+line-height: 32px;
+position: relative;
+top: -48px;
+}
+
+@keyframes draw {
+0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+}
+100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+}
+}
+
+.svg-wrapper:hover .shape {
+-webkit-animation: 1s draw linear forwards;
+animation: 0.5s draw linear forwards;
+}
+
+
 
 .h2OqueFazemos{
     color: #65ACD8;
     font-family: Century Gothic;
 }
 
-.oQueFazemos{
+.objetivos {
+    text-align: justify;
+}
+
+.titulos{
     color: #005186;
-    font-family: Century Gothic;
+    font: bold;
 }
 
 .texto-esquerda{
     text-align: left;
+    font-size: 120%;
 }
 
 .margem{
@@ -102,14 +126,11 @@
     text-align: justify;
 }
 
-.imagemParceiros{
-    background-image: url(https://i.imgur.com/cFyuOd5.jpg);
-    background-position: 90%;
-    background-repeat: no-repeat;
-    background-size: 50%;
+
+.textoObjetivos{
+    font-size: 105%;
 }
 
-.social{
-    width: 50px;
-    height: 50px;
+.textosParceiros{
+    font-size: 105%;
 }

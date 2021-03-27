@@ -1,27 +1,31 @@
-# LivrariaAbraco
+# Livraria Abraço
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
+Este repositório contém a descrição documentada do e-commerce da Livraria Abraço. Na branch -main está integrado todas as implementações desenvolvidas ao longo de dois meses.
 
-## Development server
+Durante o projeto criou-se back-end, front-end e o banco de dados,  sendo gerado com Angular CLI na versão 11.2.0. Cada pasta tem uma configuração específica para a montagem de cada uma das páginas. Para mais detalhes de acesso do Angular, segue-se:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O projeto foi gerado com Angular CLI na versão 11.2.0.
 
-## Code scaffolding
+# Desenvolvimento do Servidor
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Digite ng serve no servidor dev. Navegue em  http://localhost:4200/. O aplicativo deve ser recarregado automaticamente se você tiver qualquer modificação nos arquivos.
 
-## Build
+# Estrutura do Código
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Digite ng generate component component-name para gerar um novo componente. Você deve também usar ng generate directive|pipe|service|class|guard|interface|enum|module.
 
-## Running unit tests
+# Construção
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Digite ng build para construir o projeto. Os artefatos de construção devem ser armazenados em dist/directory. Use a flag --prod para a construir a produção.
 
-## Running end-to-end tests
+# Operando unidades de teste
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Digite ng test para executar as unidades via Karma
 
-## Further help
+# Operando unidades de teste ponta a ponta
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Digite ng e2e para executar as unidades ponta-a-ponta via  Protractor.
+
+# Mais ajuda
+
+Para obter mais ajuda no Angular CLI digite ng help ou verifique saída na página Angular CLI Overview and Command Reference

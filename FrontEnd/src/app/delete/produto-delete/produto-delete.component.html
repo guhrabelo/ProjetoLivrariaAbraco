@@ -1,0 +1,32 @@
+<div class="container mb-5 mt-5">
+    <div class="row mb-5">
+        <div class="col-md-12 mt-5">
+            <h1 class="text-center text-black">Apagar Produto</h1>
+
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-12 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{produto.imagem}}" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <p class="card-text">Título: {{produto.nome}}</p>
+                    <p class="card-text">Autor: {{produto.autor}} </p>
+                    <p class="card-text">Preço: R$ {{produto.preco}}</p>
+                    <p class="card-text">Quantidade: {{produto.quantidade}} Unidades </p>
+                    <p class="card-text">Genêro: {{produto.categoria.genero}} </p>
+                    <p class="card-text">Assunto: {{produto.categoria.assunto}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <h5 class="text-center mt-4 mb-4">Tem certeza que deseja apagar este Protudo?</h5>
+        <div class="col-md-12 d-flex justify-content-center">
+            <button class="btn btn-danger mr-4" routerLink='/produto'>Não</button>
+            <button class="btn btn-success" (click)='apagar()'>Sim</button>
+        </div>
+    </div>
+</div>

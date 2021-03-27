@@ -1,0 +1,50 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-12 mt-5">
+            <h1 class="text-center text-black">Atualizar Produto</h1>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="nome">Título</label>
+                <input type="text" class="form-control" id="nome" [(ngModel)]='produto.nome'>
+
+                <label for="autor">Autor</label>
+                <input type="text" class="form-control" id="autor" [(ngModel)]='produto.autor'>
+
+                <label for="preco">Preço</label>
+                <input type="number" class="form-control" id="preco" [(ngModel)]='produto.preco'>
+
+                <label for="quantidade">Quantidade</label>
+                <input type="number" class="form-control" id="quantidade" [(ngModel)]='produto.quantidade'>
+
+                <label for="imagem">Imagem</label>
+                <input type="text" class="form-control" id="imagem" [(ngModel)]='produto.imagem'>
+
+                <fieldset disabled="disabled mb-2">
+                    <label for="disabledTextInput">Assunto Anterior  </label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="{{produto.categoria.assunto}}">
+
+                    <label for="disabledTextInput">Gênero Anterior  </label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="{{produto.categoria.genero}}">
+                </fieldset>
+
+                <label for="genero">Novo Assunto</label>
+                <select class="form-control mb-2" name="categoria" id="dropCategorias" placeholder="Selecione o Assunto"
+                    [(ngModel)]='idCategoria' (change)='findByIdCategoria()'>
+                    <option *ngFor='let item of listaCategorias' value="{{item.id}}">
+                        {{item.assunto}}
+                    </option>
+                </select>
+                
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-danger mr-4" routerLink='/produto'>Cancelar</button>
+                <button class="btn btn-success" (click)='atualizar()'>Atualizar</button>
+            </div>
+        </div>
+    </div>
+
+</div>

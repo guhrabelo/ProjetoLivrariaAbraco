@@ -1,0 +1,45 @@
+.navbar{
+    background-color: #005186;
+    font-size: 13pt;
+}
+
+.navbar-brand{
+    color:white
+}
+
+.nav-link:hover{
+    color: #65ACD8;
+}
+
+.nav-link{
+    color:white;
+}
+.navbar-brand{
+    font-size: 15pt;
+    font-family: Freestyle Script;
+}
+
+.logo{
+    height:50px;
+    margin: 0px 20px 0px 10px ;
+}
+
+.nav-link img {
+    width: 35px;
+    align-items: center;
+
+}
+
+.nav-link img:hover {
+    width: 35px;
+    align-items: center;
+    
+}
+
+.icones {
+    fill: white;
+}
+
+.icones:hover {
+    fill: #65ACD8;;
+}

@@ -1,0 +1,43 @@
+<!--Tela de Cadastro-->
+<div class="container-fluid">
+    <div class="row mt-5 d-flex justify-content-center">
+        <article class="main-container">
+            <div class="login-wrapper">
+
+                <section class="image-wrapper">
+                </section>   
+                <section class="form-wrapper">
+                    <div class="form-container align-items-center">
+                        <div class="form-messages">
+                            <h1 class="cadastro">Cadastro</h1>
+                        </div>  
+                        <form action="fakeurl.php" class="form">
+                            <input [(ngModel)]='usuario.nome' type="user" name="user" id="user-email" placeholder="Nome">
+    
+                            <input [(ngModel)]='usuario.email' type="email" name="user-email" id="user-email"
+                                placeholder="E-mail">
+    
+                            <input (input)='confirmarSenha($event)' type="password" name="user-password" id="user-password"
+                                placeholder="Senha">
+    
+                            <input [(ngModel)]='usuario.senha' type="password" name="user-password" id="user-password"
+                                placeholder="Confirmar Senha">
+                            
+                            <label for="tipo"></label>
+                            <select class="form" name="tipo" id="tipo" (change)='tipoUsuario($event)'>
+                                <option value="">Selecione o tipo de usuário</option>
+                                <option value="adm">Administrador</option>
+                            </select>
+                            
+                            <div id="afastaBotao" class="row d-flex justify-content-center">
+                                <button type="submit" class="cadastrar-button mr-3 mb-4 mt-1" (click)='cadastrar()'>Cadastrar</button>
+                                <button type="submit" class="cancelar-button mr-6 mb-4 mt-1" routerLink='/home'>Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </div>
+</div>
+<!--Tela de Cadastro-->

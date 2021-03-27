@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { $ } from 'protractor';
+import { Router } from '@angular/router';
+import { Categoria } from '../model/Categoria';
+import { Produto } from '../model/Produto';
+import { ProdutoService } from '../service/produto.service';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +11,15 @@ import { $ } from 'protractor';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
 
-  ngOnInit(): void {
+  ) { }
+
+  ngOnInit() {
+    window.scroll(0, 0)
+
+
   }
-
 
 
 }

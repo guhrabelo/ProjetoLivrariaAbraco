@@ -1,43 +1,81 @@
-.navbar{
-    background-color: #005186;
-    font-family: SansSerif;
-    font-size: 13pt;
+* {
+  box-sizing: border-box;
 }
 
-.navbar-brand{
-    color:white
+.main-container .login-wrapper {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.2);
+  width: 100%;
+  margin:50px 0px 100px 0px ;
+  display: flex;
+}
+    
+.main-container .login-wrapper .form-wrapper .form-container {
+  padding: 0px 60px;
 }
 
-.nav-link:hover{
-    color: #65ACD8;
+.main-container .login-wrapper .form-wrapper .form-container .form input {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #eeeeee;
+  border: none;
+  padding: 10px;
 }
 
-.nav-link{
-    color:white;
-}
-.navbar-brand{
-    font-size: 15pt;
-    font-family: Freestyle Script;
+.main-container .login-wrapper .form-wrapper .form-container .form input:focus {
+  outline: 2px solid #4694a8;
 }
 
-#img-bg{
-    background-image: url(https://i.imgur.com/DnUWPqC.jpg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    background-size: 90%;
+.main-container .login-wrapper .form-wrapper .form-container .form select {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #eeeeee;
+  border: none;
+  padding: 10px;
+  
 }
 
-.corDefundo{
-    background-color: #f9f9f9;
+.main-container .login-wrapper .form-wrapper .form-container .form select:focus {
+  outline: 2px solid #4694a8;
 }
 
-.botaoEntrar{
-
+.cancelar-button { 
+  width:180px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ce1414b6;
+  color: #fff;
+  text-align: center;
 }
 
-.botaoCancelar{
-
+.cadastrar-button {    
+  width:180px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: #005186;
+  color: #fff;
+  text-align: center;
+}
+  
+.main-container .image-wrapper {
+  background: url("https://i.imgur.com/siGwTCX.jpg");
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+ 
+.cadastro
+{
+  text-align: center;
+   margin-top: 30px;
+   margin-bottom: 20px;
 }

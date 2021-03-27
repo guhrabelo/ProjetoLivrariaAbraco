@@ -1,48 +1,64 @@
-  
-.cardgs * {
-  margin: auto;
-  padding: 0;
-  font-family: 'Quicksand', sans-serif;
+*{
+  padding: 0px;
+  margin: 0px;
 }
+
+.ImagemSobrenos{
+  width: 32vw;
+  height: auto;
+  align-items: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+#alinhaNomeio {
+  
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+  }
+  #alinhatd {
+  
+  background: #fff;
+  }
+  body {
+  margin: 0px;
+  }
+
+  #afastaOsCards
+  {
+    float: left;
+    width: 100px; height: 200px;
+    margin: 10px 20px;
+  }
+
+  #afastaTudo
+  {
+    
+    margin: 5% 0;
+  }
 
 p{
   font-size: 18px;
 }
 
-.navbar{
-  background-color: #005186;
-}
 
-.navbar-brand{
-  color:white
-}
-
-.nav-link:hover{
-  color: #65ACD8;
-}
-
-.nav-link{
-  color:white;
-}
-.navbar-brand{
-  font-size: 15pt;
-  font-family: Freestyle Script;
-}
-
-.jumbotron{
-  display: flex;
-
-
-}
 .container
 {
   color:#3d3d3d ;
+  margin: 5% 0;
 }
 #corDosCards
 {
   background-color: #65ACD8;
-
 }
+
+#corDosCards:hover .text-monospace{
+  color: #fef25b;
+}
+
 .display {
   display: none;
 }
@@ -108,13 +124,8 @@ img.rounded-circle {
 
 .trocaCordoNome {
   font-size: 5vw;
+  transition: color 0.8s;
   
-}
-
-
-.trocaCordoNome:hover {
-    
-  color: #fef25b;
 }
 
  
@@ -127,12 +138,6 @@ h1{
   display: flex;
 }
 
-.getset {
-  margin: 10px 10px 20px 10px;
-}
-
-
-
 h3{
   font-size: 24px;
   color: #333;
@@ -141,8 +146,9 @@ h3{
 
 .card-body {
   align-items: center;
-  height: 450px;
-}
+  height: 500px;
+  
+  }
 
 .card-body > p {
   word-wrap: break-word;
@@ -154,14 +160,44 @@ h3{
 }
 .imgem:hover
 {
-  color: #65ACD8;
+ border-color: none;
+-webkit-box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.2);
+
 }
 
+.card {
+  box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.2);
+  max-width: 270px;
+  margin: auto;
+  text-align: center;
+}
 
+.title {
+  color: grey;
+  font-size: 18px;
+}
 
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
 
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
 
-
- 
-
-
+button:hover, a:hover {
+  
+  opacity: 0.9;
+  
+}

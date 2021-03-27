@@ -1,0 +1,29 @@
+<div class="container-fluid mt-5 ">
+    <div class="row">
+        <div class="col-md-5 d-flex justify-content-end mt-5">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{produto.imagem}}" alt="Imagem de capa do card">
+            </div>
+
+        </div>
+
+        <div class="col-md-7 d-flex justify-content-start d-flex align-items-center ">
+
+            <div class="jumbotron jumbotron-fluid" style="background-color: white;">
+                <div class="container">
+                    <h1 class="display-4">{{produto.nome}} </h1>
+                    <p class="lead">Autor: {{produto.autor}}</p>
+                    <p> Preço: R$ {{produto.preco}} </p>
+                    <p> Digite a quantidade: <input type="text" class="quantidade"> </p>
+
+                </div>
+                <div class=" d-flex justify-content-center d-flex align-items-center ">
+                    <button class="btn btn-success" (click)='compraProduto()'> Adicionar ao Carrinho </button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

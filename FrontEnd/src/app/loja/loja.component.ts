@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Categoria } from '../model/Categoria';
+import { Produto } from '../model/Produto';
+import { CategoriaService } from '../service/categoria.service';
+import { ProdutoService } from '../service/produto.service';
 
 @Component({
   selector: 'app-loja',
@@ -7,9 +12,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LojaComponent implements OnInit {
 
-  constructor() { }
+  listaProdutos: Produto[]
+  tituloProduto: string
+  generoCategoria: Categoria[]
 
-  ngOnInit(): void {
+  listaCategoria: Categoria[]
+
+  key = 'genero'
+  reverse = false
+
+  constructor(
+    private produtoService: ProdutoService,
+    private categoriaService: CategoriaService,
+  ) { }
+
+  ngOnInit() {
+    window.scroll(0, 0)
+    this.getAllProdutos()
+    this.findAllCategoria()
+
+
+  }
+
+  getAllProdutos() {
+    this.produtoService.getAllProdutos().subscribe((resp: Produto[]) => {
+      this.listaProdutos = resp
+    })
+  }
+
+  findAllCategoria() {
+    this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
+      this.listaCategoria = resp
+    })
+  }
+
+  findByTituloProduto() {
+    if (this.tituloProduto == '') {
+      this.getAllProdutos()
+    } else {
+      this.produtoService.getByTituloProduto(this.tituloProduto).subscribe((resp: Produto[]) => {
+        this.listaProdutos = resp
+      })
+    }
   }
 
 }

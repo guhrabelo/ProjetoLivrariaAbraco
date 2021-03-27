@@ -1,0 +1,40 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.prod';
+import { UserLogin } from '../model/UserLogin';
+import { Usuario } from '../model/Usuario';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthService {
+
+  constructor(
+    private http: HttpClient
+  ) { }
+
+  logar(userLogin: UserLogin):Observable<UserLogin>{
+    return this.http.post<UserLogin>('http://localhost:8080/usuario/logar', userLogin)
+
+  }
+
+  cadastrar(usuario: Usuario):Observable<Usuario>{
+    return this.http.post<Usuario>('http://localhost:8080/usuario/cadastrar', usuario)
+  }
+
+  tipoDeUsuarioLogado(){
+    let usuarioTipo: string
+    
+    if(environment.tipo == 'adm'){
+      usuarioTipo = 'adm'
+    }else if(environment.tipo == 'normal'){
+      usuarioTipo = 'normal'
+    }else{
+      usuarioTipo = ''
+    }
+
+    return usuarioTipo
+  }
+
+}

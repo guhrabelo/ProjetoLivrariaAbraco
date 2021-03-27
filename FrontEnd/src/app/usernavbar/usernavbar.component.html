@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+    <img class="logo" src="https://i.imgur.com/6WIAE8r.png" alt="Logo Livraria Abraço">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"> <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"
+                width="26px" height="26px">
+                <path d="M 0 4 L 0 6 L 26 6 L 26 4 Z M 0 12 L 0 14 L 26 14 L 26 12 Z M 0 20 L 0 22 L 26 22 L 26 20 Z" />
+            </svg> </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink='/home'>HOME <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink='/loja'>LOJA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink='/sobre-nos'>SOBRE NÓS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink='/contato'>CONTATO</a>
+            </li>
+        </ul>
+
+
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <p class="nav-link">Olá, {{nome}}</p>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link icones" routerLink='/carrinho'>
+                    <svg height="40px" viewBox="0 0 512 512" width="40px" xmlns="http://www.w3.org/2000/svg"><path d="m152 467c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/><path d="m332 467c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/><path d="m152 0v362h150v-30c0-.519531 1.613281-3.960938 9.28125-7.796875 9.15625-4.578125 22.175781-7.203125 35.71875-7.203125s26.5625 2.625 35.71875 7.203125c7.667969 3.832031 9.28125 7.277344 9.28125 7.796875v30h30v-257c0-41.355469-33.644531-75-75-75-16.871094 0-32.457031 5.601562-45 15.039062v-45.039062zm120 272h-90v-182h90zm0-242v30h-90v-30zm-90 302v-30h90v30zm165-272c24.8125 0 45 20.1875 45 45v190.46875c-12.742188-5.476562-28.519531-8.46875-45-8.46875s-32.257812 2.992188-45 8.46875v-190.46875c0-24.8125 20.1875-45 45-45zm0 0"/><path d="m212 120h30v122h-30zm0 0"/><path d="m332 120h30v137h-30zm0 0"/><path d="m439.863281 392h-305.558593l-60-301h-74.304688v30h49.695312l60 301h354.441407l47.535156-222.871094-29.34375-6.257812zm0 0"/></svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link icones" routerLink='' (click)='sair()'><svg height="40px" viewBox="0 0 511 512" width="40px" xmlns="http://www.w3.org/2000/svg"><path d="m361.5 392v40c0 44.113281-35.886719 80-80 80h-201c-44.113281 0-80-35.886719-80-80v-352c0-44.113281 35.886719-80 80-80h201c44.113281 0 80 35.886719 80 80v40c0 11.046875-8.953125 20-20 20s-20-8.953125-20-20v-40c0-22.054688-17.945312-40-40-40h-201c-22.054688 0-40 17.945312-40 40v352c0 22.054688 17.945312 40 40 40h201c22.054688 0 40-17.945312 40-40v-40c0-11.046875 8.953125-20 20-20s20 8.953125 20 20zm136.355469-170.355469-44.785157-44.785156c-7.8125-7.8125-20.476562-7.8125-28.285156 0-7.8125 7.808594-7.8125 20.472656 0 28.28125l31.855469 31.859375h-240.140625c-11.046875 0-20 8.953125-20 20s8.953125 20 20 20h240.140625l-31.855469 31.859375c-7.8125 7.808594-7.8125 20.472656 0 28.28125 3.90625 3.90625 9.023438 5.859375 14.140625 5.859375 5.121094 0 10.238281-1.953125 14.144531-5.859375l44.785157-44.785156c19.496093-19.496094 19.496093-51.214844 0-70.710938zm0 0"/></svg></a>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,3 +1,9 @@
-<app-sobre-nos></app-sobre-nos>
+<app-navbar *ngIf='auth.tipoDeUsuarioLogado() == ""'></app-navbar>
 
-<!--<app-home></app-home>-->
+<app-admnavbar *ngIf='auth.tipoDeUsuarioLogado() == "adm"'></app-admnavbar>
+
+<app-usernavbar *ngIf='auth.tipoDeUsuarioLogado() == "normal"'></app-usernavbar>
+
+<router-outlet></router-outlet>
+
+<app-rodape></app-rodape>
