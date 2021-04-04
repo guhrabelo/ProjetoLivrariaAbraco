@@ -18,3 +18,6 @@ Durante o projeto criou-se back-end, front-end e o banco de dados, sendo gerado 
 Após ter iniciado o backend, conforme repositório citado acima, siga as instruções abaixo:
 - Faça a instalação do [Node](https://nodejs.org/en/) e rode o comando **npm install**;
 - Rode o comando **ng serve** e o frontend será iniciado no http://localhost:4200/ automaticamente.
+
+# Home
+<img src="https://i.imgur.com/BEYsYNr.jpg" alt="Minha Figura">
